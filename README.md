@@ -1,3 +1,6 @@
+# From the creator:
+This App will convert an address or list of addresses to checksum format and return an array. It's specially useful when dealing with whitelists in NFT projects, but I'm sure many other uses will be found.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
