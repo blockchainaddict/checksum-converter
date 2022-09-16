@@ -22,6 +22,8 @@ const Home = () => {
 
     try {
       userInputList = userInput.trim().split(" ");
+      console.log(userInputList);
+
 
       userInputList.forEach((element) => {
         checksummedAddresses.push(ethers.utils.getAddress(element));
@@ -34,7 +36,7 @@ const Home = () => {
       });
     }
 
-    console.log(checksummedAddresses);
+    
 
     isChecked ? 
     setAddressListProcessed("exports.checksummedAddressList = " + JSON.stringify(checksummedAddresses, null, 1))
@@ -60,7 +62,7 @@ const Home = () => {
         <label htmlFor="addres_list">Paste your address list here:</label>
         <input type="text" id="address_list" name="address_list" />
         
-        <p style={{fontSize:'1em', fontWeight:'300', margin:0}}>Questions about the format? <a style={{color:'#8367C7'}} href="#notes">See here</a></p>
+        <p style={{fontSize:'1em', fontWeight:'300', margin:0}}>Questions about the format? <a style={{color:'#EB5160'}} href="#notes">See here</a></p>
         
         <button
             onClick={(e) => {
@@ -113,9 +115,9 @@ const Home = () => {
               </li>
               <br />
               <p style={{ fontSize: "0.8em" }}>
-              0x2dea8b167a2a7e602b6c069925b69rfbcea902a5
-              0xa9e8bd5f14c553ef8d8215esd82997560162132d
-              0x1ea7de7555141092fab518fd393193fcad2d9a8e
+              0x2dea8b167a2a7e602b6c069925b69efbcea902a5
+              0xa9e8bd5f14c553ef8d8215ead82997560162132d
+              0x1ea7de7555141092fab518fc393193fcad2d9a8e
             </p>
             <br />
               <p>OR</p>
@@ -137,6 +139,9 @@ const Home = () => {
         <p style={{fontWeight:'300', fontSize:'1em'}}>ETH, BNB, MATIC address: 0x1D4E61e7179F91bafCb5B7eA481e40647a788149</p>
         <button onClick={() => copyToClipboard("0x1D4E61e7179F91bafCb5B7eA481e40647a788149")}>Copy</button>
       </div>
+
+      <a href="http://www.instagram.com/blockchain.addict">IG</a>
+
     </div>
   );
 };
