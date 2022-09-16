@@ -140,7 +140,7 @@ const Home = () => {
         <button onClick={() => copyToClipboard("0x1D4E61e7179F91bafCb5B7eA481e40647a788149")}>Copy</button>
       </div>
 
-      <a href="http://www.instagram.com/blockchain.addict">IG</a>
+      <a style={{color:'white', textDecoration:"none", marginBottom:"20px"}} href="http://www.instagram.com/blockchain.addict" target={"_blank"}>Instagram</a>
 
     </div>
   );
